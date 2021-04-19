@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Language indicator-->
+<html lang="en">
+
+<head>
+    <title>Acerobot</title>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <!--to make sure al devices view the website the sameway-->
+    <meta name="viewport" content="width=device-width, initial-scate=1">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./Assets/project.css">
+</head>
+
+<body>
+    <!--Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!--this will create the header-->
+    <div class="head">
+        <div class="head-inner">
+            <div class="head-logo">
+                <img src="Images/logo.png" alt="logo" width="159" height="99">
+            </div>
+            <div class="head-menu">
+                <!--this will create the nav-->
+                <nav class="navigation">
+                    <a href="index.html">HOME</a>
+                    <a href="portfolio.html">PORTFOLIO</a>
+                    <a href="book us.html">BOOK US</a>
+                    <a href="experience.html">EXPERIENCE</a>
+                    <a href="project.html">PROJECT</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <h2 class="template">PROJECTS</h2>
+        <!--used the card component to extand for more details-->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#Project1" aria-expanded="true"
+                            aria-controls="Project1">
+                            Project1
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="Project1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5>UI/UX DESIGNER – Freelance Designer</h5>
+                        <li>Prepare wireframes with UI components</li>
+                        <li>Illustrate design ideas with the use of storyboard</li>
+                        <li>Prepare Mid to High fidelity prototype designs</li>
+                        <li>Create mockup designs</li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Project2"
+                            aria-expanded="false" aria-controls="Project2">
+                            Project2
+                        </button>
+                    </h5>
+                </div>
+                <div id="Project2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5>FREELANCE VIDEOGRAPHER/DRONE PILOT – Ace Robot Ltd</h5>
+                        <li>Videographed Covid-19 awareness for Seven-Up Bottling Company.</li>
+                        <li>Videographed Workplace harrassment awareness for Seven-Up Bottling Company.</li>
+                        <li>Videographed and edited wedding videos.</li>
+                        <li>Shot and edited real estate videos.</li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Project3"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Project3
+                        </button>
+                    </h5>
+                </div>
+                <div id="Project3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5>HEAD VIDEOGRAPHER/DRONE PILOT – GallantBiz Limited</h5>
+                        <li>Directed and shot different Television Commercials for marketing purpose.</li>
+                        <li>Directed and shot documentaries.</li>
+                        <li>Capture aerial view of landmarks for documentaries and adverts.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="myfooter">
+        <p>
+            Designed by E.Iyohokwa
+        </p>
+    </footer>
+</body>
+
+</html>
